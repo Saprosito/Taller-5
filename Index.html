@@ -19,7 +19,7 @@
     <form class="form" name="addForm" id="addForm" method="post"> 
         <p><b>Registro de usuario:</b></p>
         <div style="color: rgb(228, 116, 25); background-color: white; border-color: black;" id="alerta"></div>
-        <div>
+        
             <div class="input-field col s6" id="nombre">
                 <input id="nombre" type="text" placeholder="Nombres" style="width : 320px;" minlength="3" maxlength="50" class="validate"></input>
                 <i class="material-icons prefix">account_circle</i>
@@ -55,6 +55,20 @@
                 <i class="material-icons prefix">vpn_key</i>
                 <span class="helper-text" data-error="La confimarción de la contraseña debe tener al menos 5 letras" data-success="aceptado"></span>
             </div>
+            <div class="desplegable">
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" />
+                    <span style="color: black;"><b>¿Ha sufrido enfermedades contagiosas?</b></span>
+                  </label>
+            </div>
+            <br>
+            <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Nombrelas</label>
+                </div>
+              </div>
+
             <input type="button" onclick="validarFormulario();"  value="Enviar" >
         </div>
     </form>
