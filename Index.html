@@ -57,14 +57,14 @@
             </div>
             <div class="desplegable">
                 <label>
-                    <input type="checkbox" class="filled-in" checked="checked" />
+                    <input id="selector" type="checkbox" class="filled-in" value="1" onchange="Verificarcheck()" />
                     <span style="color: black;"><b>¿Ha sufrido enfermedades contagiosas?</b></span>
                   </label>
             </div>
             <br>
-            <div class="row">
+            <div class="row" id="texto">
                 <div class="input-field col s12">
-                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <textarea id="textarea1" class="materialize-textarea" ></textarea>
                   <label for="textarea1">Nombrelas</label>
                 </div>
               </div>

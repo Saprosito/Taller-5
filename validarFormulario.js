@@ -71,8 +71,16 @@ function validarFormulario(){
 
     formulario.submit();
 }
-
-
+function Verificarcheck() {
+    element = document.getElementById("texto");
+    check = document.getElementById("selector");
+    if (check.checked) {
+        element.style.display='block';
+    }
+    else {
+        element.style.display='none';
+    }
+}
 
    
 
